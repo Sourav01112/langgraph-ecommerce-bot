@@ -5,7 +5,7 @@ import { llm } from "../seed-db"
 
 
 export async function generate_mock_data(): Promise<Item[]> {
-  const prompt = `You are a super powerful and helpful assistant that generates construction materials and raw materials store item data. Generate 2 construction and raw materials items for building and construction projects. 
+  const prompt = `You are a super powerful and helpful assistant that generates construction materials and raw materials store item data. Generate 20 construction and raw materials items for building and construction projects. 
 
 Include a diverse mix of materials such as:
 - Steel products (rebar, beams, sheets, pipes, structural steel)

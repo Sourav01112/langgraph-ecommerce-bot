@@ -35,4 +35,3 @@ export type Item = z.infer<typeof itemSchema>
 export const parser = StructuredOutputParser.fromZodSchema(z.array(itemSchema))
 
 
-// module.exports = { itemSchema, parser , Item}

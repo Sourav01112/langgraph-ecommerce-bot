@@ -47,7 +47,12 @@ const ChatWidget: React.FC = () => {
     setMessages(prev => [...prev, userMessage])
     setInputValue('')
 
-    const endpoint = threadId ? `${import.meta.env.NEXT_PUBLIC_API_BASE}/chat/${threadId}` : `${import.meta.env.NEXT_PUBLIC_API_BASE}/chat`
+    // const endpoint = threadId ? `${import.meta.env.NEXT_PUBLIC_API_BASE}/chat/${threadId}` : `${import.meta.env.NEXT_PUBLIC_API_BASE}/chat`
+
+
+    const endpoint = threadId
+  ? `${import.meta.env.NEXT_PUBLIC_API_BASE}/chat/${threadId}`
+  : `${import.meta.env.NEXT_PUBLIC_API_BASE}/chat`;
 
     try {
       const response = await fetch(endpoint, {
